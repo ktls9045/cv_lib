@@ -1,4 +1,4 @@
-from multiprocessing import Pool
+﻿from multiprocessing import Pool
 import os
 import time
 from PIL import Image
@@ -40,7 +40,7 @@ if __name__ == '__main__':
     pool.close()
     pool.join()
     '''
-    单核
+    单进程
     res = map(resize_image, img_paths)
     #Python3 返回迭代器，之后需要遍历才能得到结果
     #Python2 未尝试
